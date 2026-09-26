@@ -216,21 +216,19 @@
                         <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
                             <!-- Email address input-->
                             <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
+                                <div class="col"><input class="form-control" id="faq" type="text" placeholder="พิมพ์คำถามของคุณ" aria-label="message" data-sb-validations="required" /></div>
+                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Send Message</button></div>
                             </div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
+                            <div class="invalid-feedback mt-2" data-sb-feedback="faq:required">A question is required.</div>
                             <!-- Submit success message-->
                             <!---->
                             <!-- This is what your users will see when the form-->
                             <!-- has successfully submitted-->
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3 mt-2 text-white">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
+                                    <div class="fw-bolder">ขอบคุณสำหรับคำถามของคุณ!</div>
+                                    เราจะตอบกลับคุณโดยเร็วที่สุด
                                     <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
                                 </div>
                             </div>
                             <!-- Submit error message-->
@@ -254,8 +252,9 @@
                                 <i class="fas fa-map-marked-alt fa-2x mb-3" style="color: #64a19d;"></i>
                                 <h4 class="text-uppercase m-0">Address</h4>
                                 <hr class="contact-divider" />
-                                <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                                <div class="small text-black-50">99 99/1 ถ. สุขุมวิท ต.เชิงเนิน อ.เมืองระยอง <br> จ.ระยอง 21000</div>
                             </div>
+                            <a class="stretched-link" href="contact.html" aria-label="Contact us about our address"></a>
                         </div>
                     </div>
                     <!-- Email Card -->
@@ -269,6 +268,7 @@
                                     <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>
                                 </div>
                             </div>
+                            <a class="stretched-link" href="contact.html" aria-label="Open contact page"></a>
                         </div>
                     </div>
                     <!-- Phone Card -->
@@ -278,8 +278,9 @@
                                 <i class="fas fa-mobile-alt fa-2x mb-3" style="color: #64a19d;"></i>
                                 <h4 class="text-uppercase m-0">Phone</h4>
                                 <hr class="contact-divider" />
-                                <div class="small text-black-50">+1 (555) 902-8832</div>
+                                <div class="small text-black-50">02-012-3456</div>
                             </div>
+                            <a class="stretched-link" href="contact.html" aria-label="Contact us by phone"></a>
                         </div>
                     </div>
                 </div>
@@ -293,11 +294,8 @@
             </div>
         </section>
         <!-- Footer-->
-        <footer class="bg-light py-5">
-            <div class="container px-4 px-lg-5"><div
-                    class="small text-center text-muted">Copyright &copy; 2023 -
-                    Company Name</div></div>
-        </footer>
+        <div id="footer"></div>
+        
     </body>
 </html>
 <!-- Bootstrap core JS-->
